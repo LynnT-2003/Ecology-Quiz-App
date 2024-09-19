@@ -4,7 +4,7 @@ import { BentoGridDemo } from "@/components/bentogrid-demo";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const QuizPage = () => {
   const router = useRouter();
   return (
     <div className="">
@@ -24,4 +24,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default QuizPage;
