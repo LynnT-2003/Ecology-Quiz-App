@@ -21,7 +21,7 @@ export const ImagesSlider = ({
   direction?: "up" | "down";
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
   const handleNext = () => {
