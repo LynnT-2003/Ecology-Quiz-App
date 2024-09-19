@@ -13,7 +13,7 @@ const QuizResultsContent = () => {
   const total = searchParams.get("total") || "N/A";
 
   const handleRestartQuiz = () => {
-    router.push("/QuizPage");
+    router.push("/Quiz");
   };
 
   const handleGoHome = () => {
