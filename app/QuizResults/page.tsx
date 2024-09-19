@@ -1,15 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button"; // Assuming you have a button component from ShadCN
 
-const QuizResults = () => {
+const QuizResultsContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const score = searchParams.get("score");
-  const total = searchParams.get("total");
+  // Use a fallback value in case the searchParams are not immediately available
+  const score = searchParams.get("score") || "N/A";
+  const total = searchParams.get("total") || "N/A";
 
   const handleRestartQuiz = () => {
     router.push("/QuizPage");
@@ -34,7 +35,7 @@ const QuizResults = () => {
   };
 
   return (
-    <div className="flex flex-col items-center h-screen items-center justify-center">
+    <div className="flex flex-col items-center h-screen justify-center">
       {/* Quiz Results */}
       <div className="flex flex-col items-center">
         <h1 className="text-2xl font-bold mb-4">Congratulations!</h1>
@@ -75,5 +76,11 @@ const QuizResults = () => {
     </div>
   );
 };
+
+const QuizResults = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <QuizResultsContent />
+  </Suspense>
+);
 
 export default QuizResults;
