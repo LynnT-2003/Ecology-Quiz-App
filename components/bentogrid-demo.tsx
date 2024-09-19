@@ -35,7 +35,7 @@ const items = [
     header: (
       <div className="relative w-full h-48">
         <Image
-          src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop"
+          src="/waterfall.jpg"
           alt="Innovation Image"
           fill
           className="object-cover rounded-xl"
@@ -50,7 +50,7 @@ const items = [
     header: (
       <div className="relative w-full h-48">
         <Image
-          src="https://images.unsplash.com/photo-1517430816045-df4b7de211e0?q=80&w=3556&auto=format&fit=crop"
+          src="/garbage.webp"
           alt="Digital Revolution Image"
           fill
           className="object-cover rounded-xl"
@@ -65,7 +65,7 @@ const items = [
     header: (
       <div className="relative w-full h-48">
         <Image
-          src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?q=80&w=3556&auto=format&fit=crop"
+          src="/leaf.webp"
           alt="Art of Design Image"
           fill
           className="object-cover rounded-xl"
@@ -81,7 +81,7 @@ const items = [
     header: (
       <div className="relative w-full h-48">
         <Image
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=3556&auto=format&fit=crop"
+          src="/fifteen.webp"
           alt="Communication Image"
           fill
           className="object-cover rounded-xl"
