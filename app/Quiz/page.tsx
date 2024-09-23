@@ -139,11 +139,11 @@ const questions: Question[] = [
     question: "What is the main idea of garbage separation?",
     options: [
       "Sorting garbage at its source",
-      "Recycling waste at its source",
+      "Reduce Reuse Recycle",
       "Disposing garbage all in one place",
       "Increasing landfill sites",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
   },
   {
     question: "What is the main goal of waste separation?",
@@ -153,7 +153,7 @@ const questions: Question[] = [
       "A more efficient trash management",
       "A more efficient carbon cycle",
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
   },
   {
     question:
@@ -174,7 +174,7 @@ const questions: Question[] = [
       "They are non-recyclable because they are non-biodegradable",
       "They are harzadous because plastic is a choking hazard",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
   },
 
   {
@@ -185,7 +185,7 @@ const questions: Question[] = [
       "They should be composted to reduce waste",
       "They should be disposed of in landfills",
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
   },
 
   {
@@ -196,7 +196,7 @@ const questions: Question[] = [
       "Landfills are an efficient way to reduce waste generation",
       "Population growth has led to more landfill sites",
     ],
-    correctAnswer: 4,
+    correctAnswer: 2,
   },
   {
     question:
@@ -212,7 +212,7 @@ const questions: Question[] = [
   {
     question: "Which of the following is not an example of hazardous waste",
     options: ["Mobile Phones", "Smartwatch", "Batteries", "Stainless Steel"],
-    correctAnswer: 4,
+    correctAnswer: 3,
   },
   {
     question: "Which renewable energy source is derived from the sun?",
@@ -259,7 +259,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "What is the primary goal of waste segregation at the source?",
+    question: "What is the primary goal of waste separation at the source?",
     options: [
       "Increase landfill size",
       "Reduce the amount of recyclable waste",

@@ -69,8 +69,7 @@ const QuizResultsContent = () => {
           </span>
         </p>
         <p className="mt-0 text-2xs">
-          &copy; {new Date().getFullYear()} Ecology Quiz App. All rights
-          reserved.
+          &copy; 2024 Ecology Quiz App. All rights reserved.
         </p>
       </footer>
     </div>
