@@ -136,6 +136,26 @@ const questions: Question[] = [
     correctAnswer: 3,
   },
   {
+    question: "What is the main idea of garbage separation?",
+    options: [
+      "Sorting garbage at its source",
+      "Recycling waste at its source",
+      "Disposing garbage all in one place",
+      "Increasing landfill sites",
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "What is the main goal of waste separation?",
+    options: [
+      "Increased landfill sites",
+      "Increased waste generation",
+      "A more efficient trash management",
+      "A more efficient carbon cycle",
+    ],
+    correctAnswer: 3,
+  },
+  {
     question:
       "Which of the following methods can reduce energy consumption in households?",
     options: [
@@ -147,6 +167,38 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
+    question: "Which of the following is true about plastic waste?",
+    options: [
+      "They should be recycled and reused",
+      "They should be disposed of in landfills",
+      "They are non-recyclable because they are non-biodegradable",
+      "They are harzadous because plastic is a choking hazard",
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: "Which of the following is false about organic waste?",
+    options: [
+      "They can be broken down and used to enhance soil quality",
+      "They may end up in landfulls and produce methane",
+      "They should be composted to reduce waste",
+      "They should be disposed of in landfills",
+    ],
+    correctAnswer: 4,
+  },
+
+  {
+    question: "Which of the following is false about landfills?",
+    options: [
+      "Overcrowding is a common problem in landfills",
+      "Organic waste decomposition in landfills produces methane",
+      "Landfills are an efficient way to reduce waste generation",
+      "Population growth has led to more landfill sites",
+    ],
+    correctAnswer: 4,
+  },
+  {
     question:
       "What is the primary function of a material recovery facility (MRF)?",
     options: [
@@ -156,6 +208,11 @@ const questions: Question[] = [
       "Landfilling non-recyclable items",
     ],
     correctAnswer: 1,
+  },
+  {
+    question: "Which of the following is not an example of hazardous waste",
+    options: ["Mobile Phones", "Smartwatch", "Batteries", "Stainless Steel"],
+    correctAnswer: 4,
   },
   {
     question: "Which renewable energy source is derived from the sun?",
@@ -281,7 +338,7 @@ const QuizPage = () => {
   useEffect(() => {
     const shuffled = [...questions]
       .sort(() => Math.random() - 0.5)
-      .slice(0, 10);
+      .slice(0, 15);
     setShuffledQuestions(shuffled);
   }, []);
 
